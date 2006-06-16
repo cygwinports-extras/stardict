@@ -1,0 +1,9 @@
+category: Gnome Text
+requires: cygwin GConf2 ORBit2 glib2 gtk2-x11 libX11_6 libbonobo2 libgnome2 libgnomeui2 libpcre0
+sdesc: "Expandable international dictionary for GNOME"
+ldesc: "StarDict is a Cross-Platform and international dictionary written in
+Gtk2. It has powerful features such as 'Glob-style pattern matching,'
+'Scan selection word,' 'Fuzzy query,' etc.
+
+Dictionaries need to be downloaded separately from the
+website and decompressed in /usr/share/stardict/dic/."

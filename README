@@ -1,0 +1,189 @@
+stardict
+-------------------------------------------
+StarDict is a Cross-Platform and international dictionary written in
+Gtk2. It has powerful features such as "Glob-style pattern matching,"
+"Scan selection word," "Fuzzy query," etc.
+
+Dictionaries need to be downloaded separately from the 
+website and decompressed in /usr/share/stardict/dic/.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  GConf2-2.12.1-1
+  ORBit2-2.14.0-1
+  glib2-2.8.6-1
+  gtk2-x11-2.8.17-1
+  libX11_6-1.0.0-2
+  libbonobo2-2.14.0-1
+  libgnome2-2.14.1-1
+  libgnomeui2-2.14.1-1
+  libpcre0-6.6-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.92-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gcc-g++-3.4.4-1
+  make-3.80-1
+  pkg-config-0.20-1
+  scrollkeeper-0.3.14-2
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://stardict.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/stardict/
+
+-------------------------------------------
+
+Build instructions:
+  unpack stardict-2.4.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./stardict-2.4.7-X.cygport all
+
+This will create:
+  /usr/src/stardict-2.4.7-X-src.tar.bz2
+  /usr/src/stardict-2.4.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/stardict.schemas
+  /etc/postinstall/stardict.sh
+  /etc/preremove/stardict.sh
+  /usr/bin/stardict.exe
+  /usr/lib/bonobo/servers/GNOME_Stardict.server
+  /usr/lib/stardict/tools/21shiji.exe
+  /usr/lib/stardict/tools/21tech.exe
+  /usr/lib/stardict/tools/buddhist.exe
+  /usr/lib/stardict/tools/cedict.exe
+  /usr/lib/stardict/tools/dictd2dic.exe
+  /usr/lib/stardict/tools/directory2dic.exe
+  /usr/lib/stardict/tools/directory2treedic.exe
+  /usr/lib/stardict/tools/dsl2dict.exe
+  /usr/lib/stardict/tools/ec50.exe
+  /usr/lib/stardict/tools/hanzim2dict.py
+  /usr/lib/stardict/tools/jdictionary.exe
+  /usr/lib/stardict/tools/jm2stardict.py
+  /usr/lib/stardict/tools/kdic.exe
+  /usr/lib/stardict/tools/mova.exe
+  /usr/lib/stardict/tools/olddic2newdic.exe
+  /usr/lib/stardict/tools/oxford2dic.exe
+  /usr/lib/stardict/tools/powerword.exe
+  /usr/lib/stardict/tools/pydict2dic.exe
+  /usr/lib/stardict/tools/soothill.exe
+  /usr/lib/stardict/tools/stardict_dict_update.exe
+  /usr/lib/stardict/tools/stardict_verify.exe
+  /usr/lib/stardict/tools/tabfile.exe
+  /usr/lib/stardict/tools/treedict2dir.exe
+  /usr/lib/stardict/tools/uyghur2dict.py
+  /usr/lib/stardict/tools/wquick2dic.exe
+  /usr/lib/stardict/tools/xmlinout.exe
+  /usr/share/applications/stardict.desktop
+  /usr/share/doc/Cygwin/stardict-2.4.7.README
+  /usr/share/doc/stardict-2.4.7/ABOUT-NLS
+  /usr/share/doc/stardict-2.4.7/AUTHORS
+  /usr/share/doc/stardict-2.4.7/COPYING
+  /usr/share/doc/stardict-2.4.7/ChangeLog
+  /usr/share/doc/stardict-2.4.7/INSTALL
+  /usr/share/doc/stardict-2.4.7/README
+  /usr/share/doc/stardict-2.4.7/TODO
+  /usr/share/gnome/help/stardict/C/figures/stardict_float_window.png
+  /usr/share/gnome/help/stardict/C/figures/stardict_main_window.png
+  /usr/share/gnome/help/stardict/C/figures/stardict_notification_area.png
+  /usr/share/gnome/help/stardict/C/legal.xml
+  /usr/share/gnome/help/stardict/C/stardict.xml
+  /usr/share/gnome/help/stardict/mk/figures/stardict_float_window.png
+  /usr/share/gnome/help/stardict/mk/figures/stardict_main_window.png
+  /usr/share/gnome/help/stardict/mk/figures/stardict_notification_area.png
+  /usr/share/gnome/help/stardict/mk/legal.xml
+  /usr/share/gnome/help/stardict/mk/stardict.xml
+  /usr/share/gnome/help/stardict/nl/figures/stardict_float_window.png
+  /usr/share/gnome/help/stardict/nl/figures/stardict_main_window.png
+  /usr/share/gnome/help/stardict/nl/figures/stardict_notification_area.png
+  /usr/share/gnome/help/stardict/nl/legal.xml
+  /usr/share/gnome/help/stardict/nl/stardict.xml
+  /usr/share/gnome/help/stardict/ru/figures/stardict_float_window.png
+  /usr/share/gnome/help/stardict/ru/figures/stardict_main_window.png
+  /usr/share/gnome/help/stardict/ru/figures/stardict_notification_area.png
+  /usr/share/gnome/help/stardict/ru/legal.xml
+  /usr/share/gnome/help/stardict/ru/stardict.xml
+  /usr/share/gnome/help/stardict/uk/figures/stardict_float_window.png
+  /usr/share/gnome/help/stardict/uk/figures/stardict_main_window.png
+  /usr/share/gnome/help/stardict/uk/figures/stardict_notification_area.png
+  /usr/share/gnome/help/stardict/uk/legal.xml
+  /usr/share/gnome/help/stardict/uk/stardict.xml
+  /usr/share/gnome/help/stardict/zh_CN/figures/stardict_float_window.png
+  /usr/share/gnome/help/stardict/zh_CN/figures/stardict_main_window.png
+  /usr/share/gnome/help/stardict/zh_CN/figures/stardict_notification_area.png
+  /usr/share/gnome/help/stardict/zh_CN/legal.xml
+  /usr/share/gnome/help/stardict/zh_CN/stardict.xml
+  /usr/share/gnome/help/stardict/zh_TW/figures/stardict_float_window.png
+  /usr/share/gnome/help/stardict/zh_TW/figures/stardict_main_window.png
+  /usr/share/gnome/help/stardict/zh_TW/figures/stardict_notification_area.png
+  /usr/share/gnome/help/stardict/zh_TW/legal.xml
+  /usr/share/gnome/help/stardict/zh_TW/stardict.xml
+  /usr/share/idl/GNOME_Stardict.idl
+  /usr/share/locale/cs/LC_MESSAGES/stardict.mo
+  /usr/share/locale/de/LC_MESSAGES/stardict.mo
+  /usr/share/locale/el/LC_MESSAGES/stardict.mo
+  /usr/share/locale/hr/LC_MESSAGES/stardict.mo
+  /usr/share/locale/hu/LC_MESSAGES/stardict.mo
+  /usr/share/locale/ku/LC_MESSAGES/stardict.mo
+  /usr/share/locale/mk/LC_MESSAGES/stardict.mo
+  /usr/share/locale/nl/LC_MESSAGES/stardict.mo
+  /usr/share/locale/ru/LC_MESSAGES/stardict.mo
+  /usr/share/locale/sk/LC_MESSAGES/stardict.mo
+  /usr/share/locale/tt/LC_MESSAGES/stardict.mo
+  /usr/share/locale/uk/LC_MESSAGES/stardict.mo
+  /usr/share/locale/vi/LC_MESSAGES/stardict.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/stardict.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/stardict.mo
+  /usr/share/man/man1/stardict.1.gz
+  /usr/share/omf/stardict/stardict-C.omf
+  /usr/share/omf/stardict/stardict-mk.omf
+  /usr/share/omf/stardict/stardict-nl.omf
+  /usr/share/omf/stardict/stardict-ru.omf
+  /usr/share/omf/stardict/stardict-uk.omf
+  /usr/share/omf/stardict/stardict-zh_CN.omf
+  /usr/share/omf/stardict/stardict-zh_TW.omf
+  /usr/share/pixmaps/stardict.png
+  /usr/share/stardict/dic/    <--- StarDict dictionary directory
+  /usr/share/stardict/pixmaps/docklet_normal.png
+  /usr/share/stardict/pixmaps/docklet_scan.png
+  /usr/share/stardict/pixmaps/docklet_stop.png
+  /usr/share/stardict/pixmaps/index_appendix.png
+  /usr/share/stardict/pixmaps/index_wazard.png
+  /usr/share/stardict/pixmaps/splash.png
+  /usr/share/stardict/sounds/buttonactive.wav
+  /usr/share/stardict/sounds/menushow.wav
+  /usr/share/stardict/tools  -> /usr/lib/stardict/tools
+
+--------------------
+
+Port Notes:
+
+----- version 2.4.7-1 -----
+Version bump.
+
+----- version 2.4.6-1 -----
+Version bump.
+
+----- version 2.4.5-1 -----
+Upstream version bump.
+
+----- version 2.4.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
