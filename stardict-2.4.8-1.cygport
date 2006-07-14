@@ -1,0 +1,12 @@
+inherit gnome2
+
+DESCRIPTION="GNOME expandable dictionary"
+HOMEPAGE="http://stardict.sourceforge.net/"
+SRC_URI="http://easynews.dl.sourceforge.net/${PN}/${P}.tar.bz2"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	dodir /usr/share/stardict/dic
+}
